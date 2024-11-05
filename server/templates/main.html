@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="space-y-5">
+    <div class="flex justify-between items-center bg-slate-400 px-10 ">
+        <div class="flex gap-x-20">
+            <div class="flex gap-x-6 container">
+
+                <div class="flex">
+                    <input class="input-btn" type="radio" name="using_option"
+                        class="shrink-0 mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+                        id="not_using" onclick="selectActionMode()" checked>
+                    <label class="neon-btn text-sm  text-gray-800 ms-2 dark:text-gray-400" for="not_using">
+                        <span class="span"></span>
+                        <span class="txt">SCANNER</span>
+                    </label>
+                </div>
+
+                <div class="flex">
+                    <input class="input-btn" type="radio" name="using_option"
+                        class="shrink-0 mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+                        id="only_visit" onclick="selectActionMode()">
+                    <label class="neon-btn text-sm text-gray-800 ms-2 dark:text-gray-400" for="only_visit">
+                        <span class="span"></span>
+                        <span class="txt">VISIT</span>
+                    </label>
+                </div>
+
+                <div class="flex">
+                    <input class="input-btn" type="radio" name="using_option"
+                        class="shrink-0 mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+                        id="full_using" onclick="selectActionMode()">
+                    <label class="neon-btn text-sm text-gray-800 ms-2 dark:text-gray-400" for="full_using">
+                        <span class="span"></span>
+                        <span class="txt">ALL</span>
+                    </label>
+                </div>
+            </div>
+            <div class="flex gap-x-6" id="accept_option" class="hidden">
+                <div class="flex space-x-2 border-[3px] border-indigo-700 rounded-xl select-none">
+                    <label class="radio flex flex-grow items-center justify-center rounded-lg p-1 cursor-pointer">
+                        <input type="radio" name="accept_option" value="html" class="peer hidden" id="auto_accept" onclick="selectAuto_Manual()" />
+                        <span
+                            class="tracking-widest peer-checked:bg-gradient-to-r peer-checked:from-[blueviolet] peer-checked:to-[violet] peer-checked:text-white text-gray-700 p-2 rounded-lg transition duration-150 ease-in-out">AUTO</span>
+                    </label>
+
+                    <label class="radio flex flex-grow items-center justify-center rounded-lg p-1 cursor-pointer">
+                        <input type="radio" name="accept_option" value="react" class="peer hidden" id="manual_accept" onclick="selectAuto_Manual()" checked=""/>
+                        <span
+                            class="tracking-widest peer-checked:bg-gradient-to-r peer-checked:from-[blueviolet] peer-checked:to-[violet] peer-checked:text-white text-gray-700 p-2 rounded-lg transition duration-150 ease-in-out">MANUAL</span>
+                    </label>
+                </div>
+<!-- 
+                <div class="flex">
+                    <input type="radio" name="accept_option"
+                        class="shrink-0 mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+                        id="auto_accept" onclick="selectAuto_Manual()">
+                    <label for="hs-radio-group-1" class="text-sm text-gray-800 ms-2 dark:text-gray-400">Auto</label>
+                </div>
+
+                <div class="flex">
+                    <input type="radio" name="accept_option"
+                        class="shrink-0 mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+                        id="manual_accept" onclick="selectAuto_Manual()" checked>
+                    <label for="hs-radio-group-2" class="text-sm text-gray-800 ms-2 dark:text-gray-400">Manual</label>
+                </div> -->
+            </div>
+        </div>
+        <div class="flex space-x-4 py-3">
+            {% if is_admin %}
+            <a href="/admin/user"
+                class="relative inline-flex items-center justify-center px-10 my-4 py-2 overflow-hidden tracking-tighter text-white bg-gray-800 rounded-lg group w-30">
+                <span
+                    class="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 rounded-full group-hover:w-56 group-hover:h-56"></span>
+                <span
+                    class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+                <span class="relative">Admin</span>
+            </a>
+            {% endif %}
+            <a href="{{ url_for('home') }}"
+                class="relative inline-flex items-center justify-center px-10 my-4 py-2 overflow-hidden tracking-tighter text-white bg-gray-800 rounded-lg group w-30">
+                <span
+                    class="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 rounded-full group-hover:w-56 group-hover:h-56"></span>
+                <span
+                    class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+                <span class="relative">Home</span>
+            </a>
+            <a href="{{ url_for('logout') }}"
+                class="relative inline-flex items-center justify-center px-10 my-4 py-2 overflow-hidden tracking-tighter text-white bg-gray-800 rounded-lg group w-30">
+                <span
+                    class="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 rounded-full group-hover:w-56 group-hover:h-56"></span>
+                <span
+                    class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+                <span class="relative">Log Out</span>
+            </a>
+
+        </div>
+    </div>
+    <div class="mx-auto w-full px-10 ">
+        <div id="table1"></div>
+        <!-- <div class="text-xl my-6">Acceptable Events</div> -->
+        <div id="table2" class="my-6"></div>
+        <script src="{{ url_for('static', filename='js/main.js')}}"> </script>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,392 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="flex flex-col h-screen justify-center items-center px-20">
+    <div class="flex space-x-96">
+        <a href="/"
+            class="relative inline-flex items-center justify-center px-10 my-4 py-2 overflow-hidden font-medium tracking-tighter text-white bg-gray-800 rounded-lg group w-48">
+            <span
+                class="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 rounded-full group-hover:w-56 group-hover:h-56"></span>
+            <span
+                class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+            <span class="relative">Home</span>
+        </a>
+        <a href="https://wa.me/5493515119799" target="_blank"
+            class="relative inline-flex items-center justify-center px-10 my-4 py-2 overflow-hidden font-medium tracking-tighter text-white bg-gray-800 rounded-lg group w-48">
+            <span
+                class="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 rounded-full group-hover:w-56 group-hover:h-56"></span>
+            <span
+                class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+            <span class="relative">Contact us</span>
+        </a>
+    </div>
+    <ul class="flex flex-row space-x-5 mt-10">
+        <li>
+            <div
+                class="relative flex flex-col bg-clip-border rounded-xl bg-gradient-to-tr from-gray-900 to-gray-800 text-white shadow-gray-900/20 shadow-md w-full max-w-[20rem] p-8">
+                <div
+                    class="relative pb-8 m-0 mb-8 overflow-hidden text-center text-gray-700 bg-transparent border-b rounded-none shadow-none bg-clip-border border-white/10">
+                    <p class="block font-sans text-sm antialiased font-normal leading-normal text-white uppercase">
+                        standard
+                    </p>
+                    <h1
+                        class="flex justify-center gap-1 mt-6 font-sans antialiased font-normal tracking-normal text-white text-5xl">
+                        30 days</h1>
+                </div>
+                <div class="p-0">
+                    <ul class="flex flex-col gap-4">
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                5 team members
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                200+ components
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                40+ built-in pages
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                1 year free updates
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                Life time technical support
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div
+                class="relative flex flex-col bg-clip-border rounded-xl bg-gradient-to-tr from-gray-900 to-gray-800 text-white shadow-gray-900/20 shadow-md w-full max-w-[20rem] p-8">
+                <div
+                    class="relative pb-8 m-0 mb-8 overflow-hidden text-center text-gray-700 bg-transparent border-b rounded-none shadow-none bg-clip-border border-white/10">
+                    <p class="block font-sans text-sm antialiased font-normal leading-normal text-white uppercase">
+                        standard
+                    </p>
+                    <h1
+                        class="flex justify-center gap-1 mt-6 font-sans antialiased font-normal tracking-normal text-white text-5xl">
+                        60 days</h1>
+                </div>
+                <div class="p-0">
+                    <ul class="flex flex-col gap-4">
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                5 team members
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                200+ components
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                40+ built-in pages
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                1 year free updates
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                Life time technical support
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div
+                class="relative flex flex-col bg-clip-border rounded-xl bg-gradient-to-tr from-gray-900 to-gray-800 text-white shadow-gray-900/20 shadow-md w-full max-w-[20rem] p-8">
+                <div
+                    class="relative pb-8 m-0 mb-8 overflow-hidden text-center text-gray-700 bg-transparent border-b rounded-none shadow-none bg-clip-border border-white/10">
+                    <p class="block font-sans text-sm antialiased font-normal leading-normal text-white uppercase">
+                        standard
+                    </p>
+                    <h1
+                        class="flex justify-center gap-1 mt-6 font-sans antialiased font-normal tracking-normal text-white text-5xl">
+                        90 days</h1>
+                </div>
+                <div class="p-0">
+                    <ul class="flex flex-col gap-4">
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                5 team members
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                200+ components
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                40+ built-in pages
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                1 year free updates
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                Life time technical support
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div
+                class="relative flex flex-col bg-clip-border rounded-xl bg-gradient-to-tr from-gray-900 to-gray-800 text-white shadow-gray-900/20 shadow-md w-full max-w-[20rem] p-8">
+                <div
+                    class="relative pb-8 m-0 mb-8 overflow-hidden text-center text-gray-700 bg-transparent border-b rounded-none shadow-none bg-clip-border border-white/10">
+                    <p class="block font-sans text-sm antialiased font-normal leading-normal text-white uppercase">
+                        standard
+                    </p>
+                    <h1
+                        class="flex justify-center gap-1 mt-6 font-sans antialiased font-normal tracking-normal text-white text-5xl">
+                        180 days</h1>
+                </div>
+                <div class="p-0">
+                    <ul class="flex flex-col gap-4">
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                5 team members
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                200+ components
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                40+ built-in pages
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                1 year free updates
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                Life time technical support
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div
+                class="relative flex flex-col bg-clip-border rounded-xl bg-gradient-to-tr from-gray-900 to-gray-800 text-white shadow-gray-900/20 shadow-md w-full max-w-[20rem] p-8">
+                <div
+                    class="relative pb-8 m-0 mb-8 overflow-hidden text-center text-gray-700 bg-transparent border-b rounded-none shadow-none bg-clip-border border-white/10">
+                    <p class="block font-sans text-sm antialiased font-normal leading-normal text-white uppercase">
+                        standard
+                    </p>
+                    <h1
+                        class="flex justify-center gap-1 mt-6 font-sans antialiased font-normal tracking-normal text-white text-5xl">
+                        365 days</h1>
+                </div>
+                <div class="p-0">
+                    <ul class="flex flex-col gap-4">
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                5 team members
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                200+ components
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                40+ built-in pages
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                1 year free updates
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="p-1 border rounded-full border-white/20 bg-white/20"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                                    </path>
+                                </svg></span>
+                            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                                Life time technical support
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+{% endblock %}
