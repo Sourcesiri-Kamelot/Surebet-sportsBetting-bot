@@ -837,7 +837,7 @@ def pressKey():
     while True:
         if keyboard.is_pressed('esc'):
             pressedKey = True
-            # print(f' {datetime.now().strftime("%H:%M:%S")} pressed ESC key\n')
+            print(f' {datetime.now().strftime("%H:%M:%S")} pressed ESC key\n')
         sleep(0.1)
 
 
