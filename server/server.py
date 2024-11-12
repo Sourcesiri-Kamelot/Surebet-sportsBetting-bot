@@ -670,6 +670,9 @@ def disconnect():
         pass
 
 
+def newFunction() -> bool:
+    return True
+
 if __name__ == '__main__':
     Thread(target = fetchData).start()
     app.run(host='0.0.0.0', port=80)
